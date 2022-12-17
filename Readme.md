@@ -1,13 +1,19 @@
-Run Server with uvicorn:
+- Install requirements:
+
+    ``pip install -r requirements.txt``
 
 
-``python uvicorn server:app``
+- Run Server with uvicorn:
 
-then run clients with:
+    ``uvicorn server:app``
 
-``python client.py 1 0.5``
 
-* first arg is user_id 
-* second arg is sleep_time
+- then run clients with:
 
-Now you can play with ``THROTTLING_IS_ACTIVE``, ``REQUEST_LIMIT``, ``TIME_LIMIT`` in server.py
+    ``python client.py 1 0.5``
+
+  * first arg is user_id 
+  * second arg is sleep_time
+
+
+- Now you can play with ``THROTTLING_IS_ACTIVE``, ``REQUEST_LIMIT``, ``TIME_LIMIT`` in server.py
